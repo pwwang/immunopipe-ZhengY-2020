@@ -6,7 +6,7 @@ Reanalysis of the scRNA-seq and scTCR-seq data from [Zheng, Y., et al. 2020](htt
 
 ## Data preparation
 
-The data was downloaded from [GSE145370](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145370), where 47 samples from 38 patients were sequenced with scRNA-seq and scTCR-seq.
+The data was downloaded from [GSE145370](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145370), where 14 samples from 7 patients were sequenced with scRNA-seq and scTCR-seq.
 
 See `prepare-data.sh` for details.
 
@@ -24,4 +24,4 @@ See details at `Immunopipe.config.toml`.
 
 You can find the results in the `Immunopipe-output` directory.
 
-The report can be found at [https://imp-liub-2022.pwwang.com/REPORTS](https://imp-liub-2022.pwwang.com/REPORTS).
+The report can be found at [https://imp-zhengy-2020.pwwang.com/REPORTS](https://imp-zhengy-2020.pwwang.com/REPORTS).

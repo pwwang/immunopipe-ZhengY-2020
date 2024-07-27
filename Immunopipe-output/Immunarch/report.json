@@ -1,0 +1,415 @@
+{
+  "Exploratory Analysis": {
+    "CDR3 length distribution": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/len/DEFAULT.png",
+            "name": {}
+          }
+        ]
+      }
+    },
+    "Clonotype volume (Number of clonotypes)": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/volume/DEFAULT.png",
+            "name": {}
+          }
+        ]
+      }
+    },
+    "Clonotype abundances": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/count/DEFAULT.png",
+            "name": {}
+          }
+        ]
+      }
+    }
+  },
+  "Clonality Analysis": {
+    "Top Clones": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/top_clones/DEFAULT.png",
+            "name": {}
+          }
+        ]
+      }
+    },
+    "Rare Clones": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/rare_clones/DEFAULT.png",
+            "name": {}
+          }
+        ]
+      }
+    },
+    "Clonal Space Homeostasis": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/homeo_clones/DEFAULT.png",
+            "name": {}
+          }
+        ]
+      }
+    }
+  },
+  "Repertoire Overlaps": {
+    "public": {
+      "#": {
+        "flat": [
+          {
+            "kind": "table_image",
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/overlap/public/public.png",
+            "descr": "Repertoire overlap is the most common approach to measure repertoire similarity, using method <code>public<\/code>, number of public (shared) clonotypes, a classic measure of overlap similarity"
+          }
+        ]
+      }
+    }
+  },
+  "Gene Usage": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "table_image",
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/gene_usage/DEFAULT/DEFAULT.png",
+            "descr": "Distribution of known gene segments following the <a href=\"http://www.imgt.org/IMGTrepertoire/LocusGenes/\" target=\"_blank\">IMGT<\/a> nomenclature."
+          }
+        ]
+      }
+    }
+  },
+  "Spectratyping": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Spectratype is a useful way to represent distributions of genes per sequence length."
+          }
+        ]
+      }
+    },
+    "By_Clonotype": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S133A.spect.png",
+            "name": "S133A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S133B.spect.png",
+            "name": "S133B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S134A.spect.png",
+            "name": "S134A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S134B.spect.png",
+            "name": "S134B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S135A.spect.png",
+            "name": "S135A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S135B.spect.png",
+            "name": "S135B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S149A.spect.png",
+            "name": "S149A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S149B.spect.png",
+            "name": "S149B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S150A.spect.png",
+            "name": "S150A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S150B.spect.png",
+            "name": "S150B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S158A.spect.png",
+            "name": "S158A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S158B.spect.png",
+            "name": "S158B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S159A.spect.png",
+            "name": "S159A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Clonotype/S159B.spect.png",
+            "name": "S159B"
+          }
+        ]
+      }
+    },
+    "By_Num_Clones": {
+      "#": {
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S133A.spect.png",
+            "name": "S133A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S133B.spect.png",
+            "name": "S133B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S134A.spect.png",
+            "name": "S134A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S134B.spect.png",
+            "name": "S134B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S135A.spect.png",
+            "name": "S135A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S135B.spect.png",
+            "name": "S135B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S149A.spect.png",
+            "name": "S149A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S149B.spect.png",
+            "name": "S149B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S150A.spect.png",
+            "name": "S150A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S150B.spect.png",
+            "name": "S150B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S158A.spect.png",
+            "name": "S158A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S158B.spect.png",
+            "name": "S158B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S159A.spect.png",
+            "name": "S159A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/spectratyping/By_Num_Clones/S159B.spect.png",
+            "name": "S159B"
+          }
+        ]
+      }
+    }
+  },
+  "Diversity Estimation": {
+    "gini": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Diversity estimation using <code>gini<\/code>: the Gini coefficient measures the inequality among values of a frequency distribution (for example levels of income). A Gini coefficient of zero expresses perfect equality, where all values are the same (for example, where everyone has the same income). A Gini coefficient of one (or 100 percents ) expresses maximal inequality among values (for example where only one person has all the income)."
+          }
+        ],
+        "tabs": [
+          {
+            "name": "Diversity Plot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/diversity/gini/diversity.png"
+              }
+            ]
+          },
+          {
+            "name": "Diversity Table",
+            "contents": [
+              {
+                "kind": "table",
+                "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/diversity/gini/diversity.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Kmer and sequence motif analysis": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Counting k-mer occurrences"
+          }
+        ]
+      },
+      "Kmer sequence occurrences": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "K-mer sequence occurrences and motif analysis of CDR3 amino acid sequences"
+          },
+          {
+            "kind": "image",
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/Allsamples.png"
+          }
+        ]
+      },
+      "Motif analysis": {
+        "flat": [],
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S133A-profile.png",
+            "name": "S133A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S133B-profile.png",
+            "name": "S133B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S134A-profile.png",
+            "name": "S134A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S134B-profile.png",
+            "name": "S134B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S135A-profile.png",
+            "name": "S135A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S135B-profile.png",
+            "name": "S135B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S149A-profile.png",
+            "name": "S149A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S149B-profile.png",
+            "name": "S149B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S150A-profile.png",
+            "name": "S150A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S150B-profile.png",
+            "name": "S150B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S158A-profile.png",
+            "name": "S158A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S158B-profile.png",
+            "name": "S158B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S159A-profile.png",
+            "name": "S159A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/kmer/DEFAULT/S159B-profile.png",
+            "name": "S159B"
+          }
+        ]
+      }
+    }
+  },
+  "V-J Junction Circos Plots": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "V-J usage plot displaying the frequency of various V-J junctions."
+          }
+        ],
+        "table_of_images": [
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S133A.png",
+            "name": "S133A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S133B.png",
+            "name": "S133B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S134A.png",
+            "name": "S134A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S134B.png",
+            "name": "S134B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S135A.png",
+            "name": "S135A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S135B.png",
+            "name": "S135B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S149A.png",
+            "name": "S149A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S149B.png",
+            "name": "S149B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S150A.png",
+            "name": "S150A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S150B.png",
+            "name": "S150B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S158A.png",
+            "name": "S158A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S158B.png",
+            "name": "S158B"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S159A.png",
+            "name": "S159A"
+          },
+          {
+            "src": "/research/bsi/projects/adhoc/s304818.Single-cell-TCR-RNA-seq/immunopipe-ZhengY-2020/Immunopipe-output/Immunarch/samples.immunarch.immunarch/vj_junc/DEFAULT/S159B.png",
+            "name": "S159B"
+          }
+        ]
+      }
+    }
+  }
+}

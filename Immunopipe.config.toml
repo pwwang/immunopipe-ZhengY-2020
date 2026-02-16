@@ -1,0 +1,175 @@
+[plugin_opts]
+args_dump = true
+
+[SampleInfo.in]
+infile = [ "data/samples.txt" ]
+
+[SeuratPreparing.envs]
+ncores = 4
+cell_qc = "nFeature_RNA >= 400 & percent.mt <= 10"
+gene_qc = { min_cells = 0 }
+IntegrateLayers = { method = "cca" }
+FindVariableFeatures = { nfeatures = 2000 }
+
+[SeuratClusteringOfAllCells.envs]
+ncores = 4
+cache = "./cache"
+FindClusters = { resolution = 1.5 }
+
+[ClusterMarkersOfAllCells.envs]
+ncores = 4
+# use_presto = true
+# rest = { test-use = "roc" }  # takes too long
+
+[TOrBCellSelection.envs]
+kmeans = { nstart = 10 }
+ignore_vdj = true  # since we have NK cells
+indicator_genes = [
+    "CD3E", "CD3G", "CD3D", "CD2",  # T cell
+    "KLRC1", "KLRD1",  # NK cell
+]
+
+[SeuratClustering.envs]
+ncores = 4
+cache = "./cache"
+FindClusters = { resolution = 1 }
+
+[ClusterMarkers.envs]
+ncores = 4
+
+[ModuleScoreCalculator.envs.modules.NaiveScore]
+features = ["CCR7", "TCF7", "LEF1", "SELL"]
+
+[ModuleScoreCalculator.envs.modules.Treg]
+features = [
+    "NT5E", "CD3D", "CD3G", "CD3E", "CD4", "CD5", "ENTPD1", "CTLA4",
+    "IZUMO1R", "TNFRSF18", "IL2RA", "ITGAE", "LAG3", "TGFB1", "LRRC32", "TNFRSF4",
+    "SELL", "FOXP3", "STAT5A", "STAT5B", "LGALS1", "IL10", "IL12A", "EBI3", "TGFB1",
+]
+
+[ModuleScoreCalculator.envs.modules.Exhaustion]
+features = [
+    "FCRL3","CD27","PRKCH","B2M","ITM2A","TIGIT","ID3","GBP2","PDCD1","KLRK1",
+    "HSPA1A","SRGN","TNFRSF9","TMBIM6","TNFRSF1B","CADM1","ACTB","CD8A","RGS2",
+    "FAIM3","EID1","HSPB1","RNF19A","IFI16","LYST","PRF1","STAT1","UBC","CD74",
+    "IL2RG","FYN","PTPN6","HLA-DRB1","HNRNPC","UBB","CD8B","HAVCR2","IRF8","LAG3",
+    "ATP5B","STAT3","IGFLR1","MGEA5","HSPA1B","COTL1","VCAM1","HLA-DMA","PDE7B",
+    "TBC1D4","SNAP47","RGS4","CBLB","TOX","CALM2","ATHL1","SPDYE5","DDX5","SLA",
+    "PTPRCAP","IRF9","MATR3","LITAF","TPI1","ETV1","PAM","ARID4B","NAB1","RAPGEF6",
+    "LDHA","WARS","RASSF5","OSBPL3","FAM3C","TAP1","HLA-DRB6","FABP5","CD200","CTLA4",
+    "SNX9","ETNK1","MALAT1","ZDHHC6","ARL6IP5","DUSP2","HLA-DQB1","HNRNPK","DGKH",
+    "LRMP","H3F3B","IDH2","TRAF5","TBL1XR1","ANKRD10","ALDOA","LSP1","PTPN7","NSUN2",
+    "RNF149","CD2","SRSF1","GOLPH3","HLA-A","LIMS1","SDF4","ROCK1","EDEM1","APLP2",
+    "ITK","TRIM22","SPRY2","ACTG1","HLA-DPA1","EWSR1","SRSF4","ESYT1","LUC7L3","ARNT",
+    "GNAS","ARF6","ARPC5L","NCOA3","PAPOLA","GFOD1","GPR174","DDX3X","CAPRIN1","ARPC2",
+    "PDIA6","SEMA4A","CSDE1","PSMB9","NFATC1","PTPN11","AGFG1","PCED1B","CCL4L1",
+    "CCND2","CCL4L2","CXCR6","AKAP5","IFNG","MIR155HG","ENTPD1","TOX2","CD7","RAB27A",
+    "ITGAE","PHLDA1","PAG1","CSF1","NBL1","CCL3","ILRB","FASLG","ZC3H12C","MYO7A",
+    "SIRPG","GALNT1","UBE2F","DUSP4","SYT11","TRAC","TNS3","RDH10","PTMS","CXCL13",
+    "KIR2DL4",
+]
+
+[ModuleScoreCalculator.envs.modules.Cytotoxicity]
+features = [
+    "PRF1","IFNG","GNLY","NKG7","GZMB","GZMA","HZMH","KLRK1","KLRKB1","KLRD1","CTSW",
+    "CST7","CX3CR1","FGFBP2","S1PR5","FCGR3A","PLAC8","C1orf21","TGFBR3","PLEK","FGR",
+    "KLRF1","SPON2","CD300A","S1PR1","FAM65B","EFHD2","STK38","C1orf162","SORL1",
+    "EMP3","ARL4C","BIN2","CCND3","FCRL6","SAMD3","TRDC","TYROBP","GNLY","KLRG1",
+]
+
+[ModuleScoreCalculator.envs.modules.Monocyte]
+features = [
+    "S100A12","S100A8","VCAN","IL1B","IL8","FCN1","S100A9","CD300E","NEXN","THBS1",
+    "G0S2","NAMPT","BCL2A1","CD36","MARCO","AQP9","TIMP1","CCR2","LILRA5","PPP1R15A",
+]
+
+[ModuleScoreCalculator.envs.modules.M1]
+features = [
+    "NOS2","IL12","FCGR1A","FCGR1B","FCGR1C","CD80","CXCR10","IL23","CXCL9","CXCL10",
+    "CXCL11","CD86","IL1A","IL1B","IL6","TNF","MHCII","CCL5","IRF5","IRF1","CD40",
+    "KYNU","CCR7",
+]
+
+[ModuleScoreCalculator.envs.modules.M2]
+features = [
+    "ARG1","IL10","CD32","CD163","FCER2","CD200R1","PDCD1LG2","CD274","MARCO","CSF1R",
+    "MRC1","IL1RN","Il1R2","IL4R","CCL4","CCL13","CCL20","CCL17","CCL18","CCL22",
+    "CCL24","LYVE1","VEGFA","VEGFB","VEGFC","VEGFD","EGF","CTSA","CTSB","CSTC","CTSD",
+    "TGFB1","TGFB2","TGFB3","MMP14","MMP19","MMP9","CLEC7A","WNT7b","FASL","TNFSF12",
+    "TNFSF8","CD276 ","VTCN1 ","MSR1 ","FN1","IRF4",
+]
+
+[ModuleScoreCalculator.envs.modules.MDSC]
+features = [
+    "CCR7","CD1A","CD1B","CD1C","CD207","CD209","CD4","CD40","CD80","CD83","CD86",
+    "CMKLR1","HLA-DOA","HLA-DOB","HLA-DRA","HLA-DRB1","HLA-DRB5","HLA-DRB6","ITGA4",
+    "ITGAM","ITGAX","LY75","NRP1","PDCD1LG2",
+]
+
+[ModuleScoreCalculator.envs.modules.DC_Activation]
+features = [
+    "FSCN1","BIRC3","LAMP3","CCL19","LAD1","MARCKS","TNFAIP2","CCR7","CCL22",
+    "MARCKSL1","EBI3","TNFRSF11B","NUB1","INSM1","RAB9A","LY75","SIAH2","POGLUT1",
+    "KDM2B","MGLL","TXN","MLLT6","KIF2A","GRSF1","FAM49A","PLEKHG1","SOCS2","RFTN1",
+    "AC009812.4","BMP2K","NAV1","IL7R","ID2","CCL17","PPP1R9B","NRP2","TUBB6","ARNTL2",
+    "UVRAG","TXNDC11","MREG","BTG1",
+]
+
+[ModuleScoreCalculator.envs.modules.DC_Maturation]
+features = [
+    "GAL3ST","NUDT17","ITGB8","ADCY6","ENO2","IL15RA","SOCS2","IL15","STAP2","PHF24",
+    "ANKRD33B","INSM1","ANXA3","ARHGAP28","RNF115","ADORA2A","EXTL1","SPSB","SLC22A23",
+    "RABGAP1","GYG1","DAP","OGFR","GYG2","CCSER2","TMEM123","NET1","GPR52","SLCO5A1",
+    "FAH","CLU","PCGF5","SAMSN1","CDKN2B","BMP2K","ZC2HC1A","SERINC5","HIVEP1","CNR1",
+    "CNR2",
+]
+
+[ModuleScoreCalculator.envs.modules.DC_Tolerance]
+features = [
+    "STAB1","ANXA1","IDO1","IL10","IL27","STAT3","ENTPD1","SOCS2","CCR7",
+    "CD274","FTL","IRF1","IRF2",
+]
+
+[ModuleScoreCalculator.envs.modules.Survival]
+features = ["IFNGR1","IFNGR2","IDO1","IL10","CD163","CD274"]
+
+# Figure 2a
+[SeuratClusterStats.envs.dimplots.UMAP]
+label = true
+
+# Figure 2b
+[SeuratClusterStats.envs.features."T cell function-associated genes"]
+plot_type = "heatmap"
+features = [
+    "TCF7", "SELL", "LEF1", "CCR7", "IL2", "GZMA", "GNLY", "PRF1", "GZMB", "GZMK",
+    "IFNG", "NKG7", "TNF", "CX3CR1", "GZMH", "FGFBP2", "CD28", "TNFRSF14", "ICOS",
+    "TNFRSF9", "LAG3", "TIGIT", "PDCD1", "HAVCR2", "CTLA4", "EOMES", "HOPX", "TBX21",
+    "ZEB2", "HIF1A", "ID2", "TOX", "IL2RA", "FOXP3", "IKZF2", "CD38",
+    "ENTPD1", "ITGAE", "CD4", "CD8A",
+]
+
+[SeuratClusterStats.envs.features."T cell function-associated genes (feature plots)"]
+plot_type = "dim"
+facet_ncol = 4
+features = [
+    "TCF7", "SELL", "LEF1", "CCR7", "IL2", "GZMA", "GNLY", "PRF1", "GZMB", "GZMK",
+    "IFNG", "NKG7", "TNF", "CX3CR1", "GZMH", "FGFBP2", "CD28", "TNFRSF14", "ICOS",
+    "TNFRSF9", "LAG3", "TIGIT", "PDCD1", "HAVCR2", "CTLA4", "EOMES", "HOPX", "TBX21",
+    "ZEB2", "HIF1A", "ID2", "TOX", "IL2RA", "FOXP3", "IKZF2", "CD38",
+    "ENTPD1", "ITGAE", "CD4", "CD8A",
+]
+
+[SeuratClusterStats.envs.features."T cell function-associated genes (violin plots)"]
+plot_type = "violin"
+facet_ncol = 4
+features = [
+    "TCF7", "SELL", "LEF1", "CCR7", "IL2", "GZMA", "GNLY", "PRF1", "GZMB", "GZMK",
+    "IFNG", "NKG7", "TNF", "CX3CR1", "GZMH", "FGFBP2", "CD28", "TNFRSF14", "ICOS",
+    "TNFRSF9", "LAG3", "TIGIT", "PDCD1", "HAVCR2", "CTLA4", "EOMES", "HOPX", "TBX21",
+    "ZEB2", "HIF1A", "ID2", "TOX", "IL2RA", "FOXP3", "IKZF2", "CD38",
+    "ENTPD1", "ITGAE", "CD4", "CD8A",
+]
+
+[SeuratClusterStats.envs.features."Gene signatures"]
+plot_type = "dot"
+features = ["Cytotoxicity", "Exhaustion", "NaiveScore", "Treg"]

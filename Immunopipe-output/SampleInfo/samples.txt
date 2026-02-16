@@ -1,0 +1,15 @@
+Sample	Patient	Tissue	Stage	RNAData	TCRData
+S133A	S133	Tumor	IIIB	prepared-data/S133A	prepared-data/S133A
+S133B	S133	Normal	IIIB	prepared-data/S133B	prepared-data/S133B
+S134A	S134	Tumor	IIIA	prepared-data/S134A	prepared-data/S134A
+S134B	S134	Normal	IIIA	prepared-data/S134B	prepared-data/S134B
+S135A	S135	Tumor	IIA	prepared-data/S135A	prepared-data/S135A
+S135B	S135	Normal	IIA	prepared-data/S135B	prepared-data/S135B
+S149A	S149	Tumor	IIA	prepared-data/S149A	prepared-data/S149A
+S149B	S149	Normal	IIA	prepared-data/S149B	prepared-data/S149B
+S150A	S150	Tumor	IIIB	prepared-data/S150A	prepared-data/S150A
+S150B	S150	Normal	IIIB	prepared-data/S150B	prepared-data/S150B
+S158A	S158	Tumor	IIB	prepared-data/S158A	prepared-data/S158A
+S158B	S158	Normal	IIB	prepared-data/S158B	prepared-data/S158B
+S159A	S159	Tumor	IIIB	prepared-data/S159A	prepared-data/S159A
+S159B	S159	Normal	IIIB	prepared-data/S159B	prepared-data/S159B
